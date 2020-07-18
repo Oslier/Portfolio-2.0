@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  border-style: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #bbe1fa;
+}
+
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color: #1b262c;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  padding: 0% 10%;
+  top: 35%;
+}
+
+.container h1 {
+  font-size: 4em;
+}
+
+.container p {
+  padding: 1em 0;
+}
+
+.nav {
+  background-color: #1b1a1a;
+  width: 100px;
+}
+
+.nav ul {
+  height: 100vh;
+  position: relative;
+  top: 40vh;
+  z-index: 2;
+}
+
+.nav a {
+  display: block;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #0f4c75;
+  color: transparent;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.nav a:hover {
+  color: #0f4c75;
+}
+
+.contact {
+  background-color: #1b262c;
+  border-color: #bbe1fa;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 1.5em 0;
+  padding: 0.7em;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.contact:hover {
+  background-color: #bbe1fa;
+  color: #1b262c;
+  border-color: #bbe1fa;
+}
+/*# sourceMappingURL=main.css.map */
