@@ -28,6 +28,8 @@ body{
 }
 
 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     padding: 0% 10%;
     top: 35%;
