@@ -94,6 +94,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
 }
 
 label{
@@ -108,7 +110,7 @@ input{
     left: 30%;
     width: 40%;
     font-size: 1.5em;
-
+    color: map-get($map: $colors, $key: "secundary");
     padding: 1%;
 }
 
@@ -119,4 +121,6 @@ textarea{
     position: relative;
     left: 30%;
     width: 40%;
+    padding: 1%;
+    color: map-get($map: $colors, $key: "secundary");
 }

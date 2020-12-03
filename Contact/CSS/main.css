@@ -119,6 +119,7 @@ input {
   left: 30%;
   width: 40%;
   font-size: 1.5em;
+  color: #0f4c75;
   padding: 1%;
 }
 
@@ -127,5 +128,7 @@ textarea {
   position: relative;
   left: 30%;
   width: 40%;
+  padding: 1%;
+  color: #0f4c75;
 }
 /*# sourceMappingURL=main.css.map */

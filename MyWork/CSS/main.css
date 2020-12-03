@@ -22,8 +22,14 @@ body {
 .container {
   position: relative;
   padding: 0% 10%;
-  top: 35%;
+  top: 20%;
   z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 10%;
+  justify-items: center;
 }
 
 .container h1 {
@@ -32,6 +38,19 @@ body {
 
 .container p {
   padding: 1em 0;
+}
+
+.slide {
+  display: block;
+  width: 40vh;
+  height: 30vh;
+  background-color: black;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.slide:hover {
+  background-color: blue;
 }
 
 .nav {

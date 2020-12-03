@@ -30,8 +30,14 @@ body{
 .container{
     position: relative;
     padding: 0% 10%;
-    top: 35%;
+    top: 20%;
     z-index: 1;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10%;
+
+    justify-items: center;
 
     h1{
         font-size: 4em;
@@ -39,6 +45,18 @@ body{
     p{
         padding: 1em 0;
     }
+}
+
+.slide{
+    display: block;
+    width: 40vh;
+    height: 30vh;
+    background-color: black;
+    transition: background-color 0.5s;
+}
+
+.slide:hover{
+    background-color: blue;
 }
 
 .nav{
