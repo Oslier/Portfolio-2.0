@@ -22,8 +22,9 @@ body {
 .container {
   position: relative;
   padding: 0% 10%;
-  top: 35%;
+  top: 20%;
   z-index: 1;
+  font-size: 1.5em;
 }
 
 .container h1 {
@@ -93,27 +94,38 @@ body {
   color: #1b1a1a;
 }
 
-.contact {
-  background-color: #1b262c;
-  border-color: #bbe1fa;
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding-top: 2%;
+  padding-bottom: 1%;
   position: relative;
-  top: 3em;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 0.7em;
-  font-size: 1em;
-  font-weight: bolder;
+  left: 30%;
 }
 
-.contact:hover {
-  background-color: #bbe1fa;
-  color: #1b262c;
-  border-color: #bbe1fa;
+input {
+  position: relative;
+  left: 30%;
+  width: 40%;
+  font-size: 1.5em;
+  padding: 1%;
 }
 
-.contact:focus {
-  background-color: #bbe1fa;
-  color: #1b262c;
-  border-color: #bbe1fa;
+textarea {
+  display: inline-block;
+  position: relative;
+  left: 30%;
+  width: 40%;
 }
 /*# sourceMappingURL=main.css.map */

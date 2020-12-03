@@ -1,3 +1,7 @@
+let w = 0;
+let x = 0;
+let iterations = 1;
+
 function setup(){
     var myCanvas = document.getElementById("canvas");
     var width = myCanvas.offsetWidth;
@@ -5,11 +9,20 @@ function setup(){
     var innerCanvas = createCanvas(width, height);
     innerCanvas.parent(myCanvas);
 
+    
+
     pixelDensity(1);
+
+}
+
+function draw(){
+    if (iterations <= 50) {
+        
+    
     loadPixels();
     for(var x = 0; x < width; x++){
         for(var y = 0; y < height; y++){
-            var iterations = 100;
+            
 
             var a = map(x, 0, width, -2, 2);
             var b = map(y, 0, height, -2, 2);
@@ -32,6 +45,7 @@ function setup(){
 
                 n++;
             }
+            
 
             var bright = map(n, 0, iterations, 0, 255);
             if(n === iterations){
@@ -44,6 +58,13 @@ function setup(){
             pixels[pix + 2] = bright;
             pixels[pix + 3] = 255;*/
 
+            if (w < 100) {
+                w++;
+            }
+            else{
+                w=0;
+            }
+
             var pix = (x + y * width) * 4;
             pixels[pix + 0] = 27 + sqrt(bright);
             pixels[pix + 1] = 38 + (bright * bright / 255);
@@ -52,5 +73,7 @@ function setup(){
         }
     }
 
+    iterations+=0.5;
     updatePixels();
+}
 }
