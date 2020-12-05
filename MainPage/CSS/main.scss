@@ -27,6 +27,22 @@ body{
     overflow: hidden;
 }
 
+.code{
+    position: absolute;
+    top: 0%;
+    padding-left: 80px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.code-end{
+    position: absolute;
+    bottom: 0%;
+    padding-left: 80px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
