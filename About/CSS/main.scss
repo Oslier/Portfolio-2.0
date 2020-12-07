@@ -35,11 +35,16 @@ body{
     top: 35%;
     z-index: 1;
 
+    section{
+        padding-right: 5%;
+    }
     h1{
         font-size: 4em;
     }
     p{
-        padding: 1em 0;
+        padding: 0.6em 2em 1em 0.5em;
+        color: rgb(233, 233, 233);
+        line-height: 1.5em;
     }
 }
 
