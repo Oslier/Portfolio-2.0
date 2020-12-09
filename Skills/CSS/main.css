@@ -20,9 +20,14 @@ body {
 }
 
 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   position: relative;
   padding: 0% 10%;
   top: 35%;
+  height: 50%;
   z-index: 1;
 }
 
@@ -32,6 +37,13 @@ body {
 
 .container p {
   padding: 1em 0;
+}
+
+.flowchart {
+  position: relative;
+  min-height: 200px;
+  height: 100%;
+  left: 20%;
 }
 
 .nav {
@@ -115,5 +127,28 @@ body {
   background-color: #bbe1fa;
   color: #1b262c;
   border-color: #bbe1fa;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .flowchart {
+    padding-top: 10%;
+  }
+  body {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body {
+    overflow: scroll;
+  }
 }
 /*# sourceMappingURL=main.css.map */

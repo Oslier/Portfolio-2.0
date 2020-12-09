@@ -28,9 +28,12 @@ body{
 }
 
 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     padding: 0% 10%;
     top: 35%;
+    height: 50%;
     z-index: 1;
 
     h1{
@@ -39,6 +42,13 @@ body{
     p{
         padding: 1em 0;
     }
+}
+
+.flowchart{
+    position: relative;
+    min-height: 200px;
+    height: 100%;
+    left: 20%;
 }
 
 .nav{
@@ -110,5 +120,29 @@ body{
         background-color: map-get($map: $colors, $key: "quaternary");
         color: map-get($map: $colors, $key: "primary");
         border-color: map-get($map: $colors, $key: "quaternary");
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        grid-template-columns: auto;
+    }
+
+    .flowchart{
+        padding-top: 10%;;
+    }
+
+    body{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: auto;
+    }
+
+    body{
+        overflow: scroll;
     }
 }
