@@ -119,3 +119,30 @@ body{
         border-color: map-get($map: $colors, $key: "quaternary");
     }
 }
+
+@media screen and (max-width: 1200px){
+    .nav{
+        height: 80px;
+        width: 100vw;
+
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+        row-gap: 150px;
+    }
+
+    body{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        row-gap: 200px;
+    }
+}
