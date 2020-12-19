@@ -75,5 +75,9 @@ function draw(){
 
     iterations+=0.5;
     updatePixels();
+
+    if(screen.width < 600){
+        var innerCanvas = createCanvas(100, 100);
+    }
 }
 }
