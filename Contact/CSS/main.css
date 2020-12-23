@@ -24,15 +24,6 @@ body {
   padding: 0% 10%;
   top: 20%;
   z-index: 1;
-  font-size: 1.5em;
-}
-
-.container h1 {
-  font-size: 4em;
-}
-
-.container p {
-  padding: 1em 0;
 }
 
 .nav {
@@ -108,16 +99,18 @@ body {
 }
 
 label {
+  display: inline-block;
+  font-size: 2rem;
   padding-top: 2%;
   padding-bottom: 1%;
   position: relative;
-  left: 30%;
+  left: 35%;
 }
 
 input {
   position: relative;
-  left: 30%;
-  width: 40%;
+  left: 35%;
+  width: 30%;
   font-size: 1.5em;
   color: #0f4c75;
   padding: 1%;
@@ -126,8 +119,8 @@ input {
 textarea {
   display: inline-block;
   position: relative;
-  left: 30%;
-  width: 40%;
+  left: 35%;
+  width: 30%;
   padding: 1%;
   color: #0f4c75;
 }
