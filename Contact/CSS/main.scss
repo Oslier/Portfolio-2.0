@@ -107,8 +107,8 @@ input{
     font-size: 1.5em;
     color: map-get($map: $colors, $key: "secundary");
     padding: 1%;
+    background-color: map-get($map: $colors, $key: "primary");;
 }
-
 
 
 textarea{
