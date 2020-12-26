@@ -22,6 +22,7 @@ body {
 .container {
   position: relative;
   padding: 0% 10%;
+  left: 10%;
   top: 20%;
   z-index: 1;
 }
@@ -124,5 +125,11 @@ textarea {
   width: 30%;
   padding: 1%;
   color: #0f4c75;
+}
+
+#canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
